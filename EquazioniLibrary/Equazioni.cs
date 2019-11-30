@@ -16,5 +16,12 @@ namespace EquazioniLibrary
             }else
                 return false;
         }
+        public static bool IsInconsisted(double a , double b )
+        {
+            if (a == 0 && b!=0)
+                return true;
+            else
+                return false;
+        }
     }
 }

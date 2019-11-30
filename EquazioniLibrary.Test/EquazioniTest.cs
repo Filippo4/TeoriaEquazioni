@@ -15,7 +15,15 @@ namespace EquazioniLibrary.Test
             bool risposta_aspettata = true;
             bool risposta = Equazioni.IsDetermined(a,b);
             Assert.AreEqual(risposta_aspettata, risposta);
-
+        }
+        [TestMethod]
+        public void TestIsInconsisted()
+        {
+            double a = 0;
+            double b = 5;
+            bool risposta_aspettata = true;
+            bool risposta = Equazioni.IsInconsisted(a, b);
+            Assert.AreEqual(risposta_aspettata, risposta);
         }
     }
 }
